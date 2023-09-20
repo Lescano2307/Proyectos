@@ -1,0 +1,118 @@
+*{
+  margin:0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+*::selection{
+  background-color: darkviolet;
+}
+main{
+  background-color: black
+}
+.Newbar{
+  background-color: rgba(11, 2, 130, 0.498) !important;
+}
+.Diagonal{
+  height: 5px;
+  background-color: red;
+  opacity: 80%;
+}
+.img_carousel {
+  height: 35vw;
+}
+@media (max-width:465px){
+  .img_carousel{
+    height: 70vw;
+  }
+}
+.Paragraph{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.P-Tittle{
+  color: white;
+  text-align: center;
+  text-decoration-line: underline;
+  text-decoration-color: red;
+}
+.content{
+  font-size: large;
+  text-align: center;
+  margin: 0px 50px 2px 50px;
+  color: white;
+}
+.Rules{
+  color: white;
+  display: flex;
+  /* align-items: center;
+  text-align: center; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+.img-rule{
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.Text-rules{
+  text-align: center;
+}
+.rule-text{
+  color: white;
+  font-family: guevana;
+  font-size: medium;
+}
+.rule-exception{
+  color: rgb(255, 255, 255);
+  background: rgb(0,0,0);
+  background: linear-gradient(36deg, rgba(0,0,0,1) 0%, rgb(68, 68, 68) 50%, rgba(0,0,0,1) 100%);
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(36deg, rgba(0,0,0,1) 0%, rgb(68, 68, 68) 50%, rgba(0,0,0,1) 100%);
+}
+.left-foot {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.btn-links{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 40px 0px;
+  height: 100%;
+}
+.links{
+  color: white;
+}
+.links:hover{
+  color:aquamarine ;
+}
+
+/* Todos desde aqui es MediaQuery */
+@media (max-width:500px){
+  main{
+    background-color: black;
+  }
+  .img_carousel{
+    display: none;
+  }
+  .P-Tittle{
+    color: white;
+  }
+  .content{
+    color: white;
+    font-size: large;
+  }
+  .rule-text{
+    font-size: large;
+    color: white;
+  }
+}
